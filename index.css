@@ -1,0 +1,207 @@
+/******************************
+    Estilos bases de todo
+******************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), fixed rgb(30, 30, 30) url(fondo-paste.jpg) no-repeat center center/cover;
+    text-align: center;
+}
+
+/******************************
+    Mensaje de la portada
+*******************************/
+.Mensaje_Portada_Texto {
+    font-family: cursive;
+    font-size: 56px;
+    animation: fadeIn 4s ease-in-out  forwards;
+}
+
+/***************************************************
+    Acomodo por las 4 filas del rompecabezas
+****************************************************/
+.Imagen_Portada1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Imagen_Portada2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -27px;
+    margin-left: -14px;
+}
+
+.Imagen_Portada3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -29px;
+    margin-left: -14px;
+}
+
+.Imagen_Portada4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -27px;
+}
+
+/*******************************************************
+    Acomodo de cada imagen del rompecabezas
+*******************************************************/
+.Contain_Imagen_Portada1 {
+    margin-right: -15px;
+    animation: fadeIn 1s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada2 {
+    margin-top: 13px;
+    margin-right: -13px;
+    animation: fadeIn 1.3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 1.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada3 {
+    margin-right: -15px;
+    animation: fadeIn 1.6s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada4 {
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada5 {
+    margin-right: -15px;
+    animation: fadeIn 2.3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 2.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada6 {
+    margin-right: -15px;
+    margin-top: -5px;
+    animation: fadeIn 2.6s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 2.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada7 {
+    margin-right: -15px;
+    animation: fadeIn 3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada8 {
+    margin-right: -15px;
+    animation: fadeIn 3.3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 3.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada9 {
+    margin-right: -15px;
+    animation: fadeIn 3.6s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 3.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada10 {
+    margin-right: -15px;
+    animation: fadeIn 4s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada11 {
+    margin-right: -15px;
+    animation: fadeIn 4.3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 4.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada12 {
+    margin-right: -15px;
+    animation: fadeIn 4.6s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 4.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada13 {
+    margin-right: -15px;
+    animation: fadeIn 5s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada14 {
+    margin-right: -15px;
+    margin-top: 12px;
+    animation: fadeIn 5.3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 5.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada15 {
+    margin-right: -15px;
+    animation: fadeIn 6s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.Contain_Imagen_Portada16 {
+    margin-top: 12px;
+    margin-right: -1px;
+    animation: fadeIn 6.3s ease-in-out  forwards;
+    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: caidaConEfecto 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/*************************************************
+    Aparición de poco a poco de cada pieza
+**************************************************/
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Definición de la animación de caída con rebote y cambio de escala */
+@keyframes caidaConEfecto {
+  0% {
+    transform: translateY(-200px) scale(0.5); /* Posición inicial: arriba y pequeña */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1; /* Se hace visible mientras cae */
+  }
+  80% {
+    transform: translateY(10px) scale(1.15); /* Pasa un poco de su posición final y se agranda ligeramente */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1); /* Posición final: en su lugar y tamaño normal */
+    opacity: 1;
+  }
+}
