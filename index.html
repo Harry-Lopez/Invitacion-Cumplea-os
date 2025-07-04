@@ -9,6 +9,46 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- Header: Cabecera de la página con navegación principal -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="#inicio" class="nav__logo--link">Mis XV años</a>
+            </div>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#ubicacion" class="nav__link">Ubicación</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#vestimenta" class="nav__link">Código de Vestimenta</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#reloj" class="nav__link">Cuenta Regresiva</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#padrinos" class="nav__link">Padrinos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#regalos" class="nav__link">Sugerencia de regalos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#asistencia" class="nav__link">Confirmar Asistencia</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="nav__toggle" aria-label="Abrir menú">
+                &#9776;
+            </button>
+        </nav>
+    </header>
+
+    <div id="inicio">
     <div class="Mensaje_Portada">
         <h1 class="Mensaje_Portada_Texto">Mis XV<br>Ruby</h1>
     </div>
@@ -39,11 +79,58 @@
         <img class="Contain_Imagen_Portada16" src="Port/16.png" alt="Cumplañer@">
         </div>
         </div>
+        </div>
+
+        <div id="ubicacion">
+            <h1 class="Mensaje_Portada_Texto">Ubicación</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.25556785588!2d-97.32749728969199!3d20.454693807169964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85da442393c0029f%3A0xcbf933b330572c8c!2zU2Fsw7NuIGRlIGV2ZW50b3MgIlBhbG1hIEphcmTDrW4i!5e0!3m2!1ses!2smx!4v1751511322535!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="Mapa"></iframe>
+        </div>
+
+        <div id="vestimenta">
+            <h2 class="Mensaje_Portada_Texto">Código de Vestimenta:<br></h2>
+            <h1 class="Vestimenta_Text">Formal</h1>
+            <div class="Mujer_Hombre">
+            <div class="Mujer">
+                <img class="Mujer_Img" src="vestido.png" alt="Código Mujer">
+                <h1 class="Vestimenta_Text">M</h1>
+                <p class="descriptionVestimenta">Las mujeres deben optar por<br> vestidos largos o de cóctel elegantes y tacones</p>
+                <div class="divisorHorizontalVestido divisorHorizontalVestido3"></div>
+            </div>
+            <div class="divisorVerticalVestido">
+                <div divisorVerticalVestido1></div>
+                <div class="divisorHorizontalVestido"></div>
+            </div>
+            <div class="Hombre">
+                <img class="Hombre_Img" src="traje 2.png" alt="Código Hombre">
+                <h1 class="Vestimenta_Text">H</h1>
+                <p class="descriptionVestimenta">Los hombres deben usar traje <br>oscuro, camisa de vestir, corbata o moño <br>y zapatos de vestir.</p>
+            </div>
+            </div>
+             <div class="divisorHorizontalVestido divisorHorizontalVestido2"></div>
+            <h3>Reservamos el color Rosa para la cumplañera</h3>
+        </div>
+
+        <div id="reloj">
+
+        </div>
+
+        <div id="padrinos">
+
+        </div>
+
+        <div id="regalos">
+
+        </div>
+
+        <div id="asistencia">
+
+        </div>
 
     <footer class="footer_section">
         <div class="footer_content">
             <p class="footer_text">© 2025 My Happy Birthday. Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
