@@ -126,7 +126,7 @@ button {
 }
 
 .Mensaje_Portada_Nombre {
-    margin-top: -110px;
+    margin-top: -90px;
     font-size: 50px;
 }
 
@@ -607,12 +607,17 @@ button {
         font-weight: bold;
     }
 
+#inicio {
+    scroll-margin-top: 70px;
+}
+
 /***************************
     Código de Vestimenta
 ****************************/
 #vestimenta {
     transform: scale(.85);
     margin-top: -100px;
+    scroll-margin-top: 70px;
 }
 
 .Mujer_Hombre {
@@ -648,6 +653,7 @@ divisorHorizontalVestido{
 
 #ubicacion {
     margin-bottom: 0px;
+    scroll-margin-top: 70px;
 }
 
 .Mapa {
