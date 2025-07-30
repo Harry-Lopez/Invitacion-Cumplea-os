@@ -1,7 +1,7 @@
 /******************************
-    Estilos bases de todo
+    Estilos bases globales
 ******************************/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,8 +13,11 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), fixed rgb(30, 30, 30) url(fondo-paste.jpg) no-repeat center center/cover;
+    color: #ffffff;
+    background-color:
+        /*#6A4F6A*/
+        #ffc2f8f8;
+    /*background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), fixed rgb(30, 30, 30) url() no-repeat center center/cover;*/
     text-align: center;
 }
 
@@ -31,11 +34,39 @@ button {
     cursor: pointer;
 }
 
+.fondo_primario {
+    background-color:
+        /*#9e809bae*/
+        #d482caf8;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #841477f8;
+    
+}
+
+.footer_section {
+    color: #ffffff;
+    background-color:
+        /*#6A4F6A*/
+        #841477f8;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 /***************************
-    Header Styles 
+    Header Styles (Menu principal)
 ***************************/
 .header {
-    background-color: #4c1c3d;
+    background-color:
+        /*#4c1c3d*/
+        /*#6A4F6A*/
+        /*#4e2f4e*/
+        #841477f8;
     color: rgb(255, 255, 255);
     padding: .5rem 2rem;
     display: flex;
@@ -53,7 +84,7 @@ button {
     width: 100%;
 }
 
-.nav__toggle{
+.nav__toggle {
     display: none;
 }
 
@@ -96,23 +127,38 @@ button {
 *******************************/
 #inicio {
     margin-bottom: 100px;
-    animation: fadeIn 3.3s ease-in-out  forwards;
+    animation: fadeIn 3.3s ease-in-out forwards;
+    scroll-margin-top: 70px;
+}
+
+.flores_adorno {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+    display: none;
+    animation: fadeIn 4s ease-in-out forwards;
 }
 
 .Mensaje_Portada_Texto {
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 30px;
-    animation: fadeIn 4s ease-in-out  forwards;
+    animation: fadeIn 4s ease-in-out forwards;
 }
 
 .adorno_bottom_title {
-    width: 250px;         /* Ancho del cuadrado */
-    height: 1px;        /* Alto del cuadrado*/
-    background-color: #4c1c3d; /* Un color de fondo para que sea visible */
-    border: 2px solid #401833; /* Borde para resaltarlo */
+    width: 250px;
+    /* Ancho del cuadrado */
+    height: 1px;
+    /* Alto del cuadrado*/
+    background-color:
+        /*#4c1c3d*/
+        #5d0e54f8;
+    border: 2px solid #4c0c45f8;
+    /* Borde para resaltarlo */
     border-radius: 5px;
-   margin: 5px;
-   margin-bottom: 10px;
+    margin: 5px;
+    margin-bottom: 10px;
 }
 
 .adorno_bottom_portada {
@@ -125,9 +171,41 @@ button {
     width: 100px;
 }
 
+.adorno_bottom_fecha {
+    margin: auto;
+    width: 250px;
+}
+
+.adorno_bottom_padrinos {
+    margin: auto;
+    width: 170px;
+}
+
+.adorno_bottom_asistencia {
+    margin: auto;
+    width: 250px;
+}
+
+.adorno_bottom_secundario {
+    margin: auto;
+    width: 250px;
+    transform: translateY(.5);
+}
+
 .Mensaje_Portada_Nombre {
     margin-top: -90px;
     font-size: 50px;
+}
+
+.Mensaje_Portada_fecha {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Mensaje_asistencia {
+    margin-top: 50px;
 }
 
 /**************************
@@ -143,43 +221,56 @@ button {
 .reproductor_Musica {
     display: flex;
     align-items: center;
-    background-color: #7A5C6F;
+    background-color:
+        /*#7A5C6F*/
+        #841477f8;
     border-radius: 15px;
     padding: 15px 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* sombreado */
     color: white;
     max-width: 500px;
+    /*Máximo de ancho*/
     width: 90%;
+    /*Tamaño del ancho */
     margin: auto;
+    /*Margen auto para centrar */
 }
 
 .album {
-    width: 80px; 
+    width: 80px;
     height: 80px;
     border-radius: 10px;
-    /* Oculta cualquier parte de la imagen que se desborde */
     overflow: hidden;
+    /* Oculta cualquier parte de la imagen que se desborde */
     margin-right: 15px;
     display: block;
 }
 
 .imagen_album {
     width: 100%;
-  height: auto; /* Mantiene la relación de aspecto */
-  display: block;
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    display: block;
 }
 
 .detalles_Cancion {
     /* Permite que esta sección ocupe el espacio disponible */
-    flex-grow: 1;   /* Le permite crecer y ocupar el espacio disponible */
-    flex-shrink: 1; /* Le permite encogerse si es necesario (el valor por defecto ya es 1, pero es bueno ser explícito) */
-    flex-basis: 0;  /* Le da un tamaño base inicial de 0, permitiendo que flex-grow/shrink distribuyan el espacio desde ahí */
-    min-width: 0;   /* ¡CLAVE! Permite que el ítem se encoja más allá de su contenido intrínseco */
-    /* Usa flexbox para organizar los detalles de la canción verticalmente */
+    flex-grow: 1;
+    /* Le permite crecer y ocupar el espacio disponible */
+    flex-shrink: 1;
+    /* Le permite encogerse si es necesario (el valor por defecto ya es 1, pero es bueno ser explícito) */
+    flex-basis: 0;
+    /* Le da un tamaño base inicial de 0, permitiendo que flex-grow/shrink distribuyan el espacio desde ahí */
+    min-width: 50px;
+    /* ¡CLAVE! Permite que el ítem se encoja más allá de su contenido intrínseco */
+    /*flexbox para organizar los detalles de la canción verticalmente */
     display: flex;
     flex-direction: column;
     /* Centra el contenido verticalmente */
     justify-content: center;
+    /* IMPORTANTE: Agregamos overflow: hidden para que el texto desbordado sea invisible antes de la animación */
+    overflow: hidden;
 }
 
 .title_song {
@@ -190,8 +281,15 @@ button {
     white-space: nowrap;
     /* Oculta el texto que se desborda */
     overflow: hidden;
-    /* Agrega puntos suspensivos (...) para el texto desbordado */
-    text-overflow: ellipsis;
+    /* Sin puntos suspensivos, si son puntos es ellipsis*/
+    text-overflow: clip;
+    /*Para evitar desbordamiento con el margen derecho*/
+    padding-right: 10px;
+    /* Estilos de la animación, aplicados por defecto (los ajustaremos con JS) */
+    animation: scrollText 10s linear infinite;
+    /* Nombre, duración, tipo, repetición */
+    animation-play-state: running;
+    /* Por defecto se ejecuta */
 }
 
 .name_artist {
@@ -200,16 +298,54 @@ button {
     margin-bottom: 8px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: clip;
+    padding-right: 10px;
+    /* Estilos de la animación, aplicados por defecto (los ajustaremos con JS) */
+    animation: scrollText 10s linear infinite;
+    /* Nombre, duración, tipo, repetición */
+    animation-play-state: running;
+    /* Por defecto se ejecuta */
+}
+
+/* Opción avanzada para "bucle" continuo (requiere un span interno para el texto) */
+.scrolling-text-container {
+    /* Un nuevo contenedor que envolverá tu texto */
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: clip; ya no es necesario aquí */
+}
+
+.scrolling-text-content {
+    /* El span dentro, que contendrá el texto */
+    display: inline-block;
+    /* Crucial para la animación */
+    /* NOTA: En el HTML, necesitarías <div class="title_song"><span class="scrolling-text-content">Texto</span><span class="scrolling-text-content">Texto</span></div> */
+    /* Duplicas el texto dentro del span */
+    animation: marquee 10s linear infinite;
+    /* Nueva animación para el bucle */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* Mueve la mitad del ancho del contenido duplicado */
 }
 
 .adition_descript {
-    background-color: #3b1f31;
+    background-color:
+        /*#3b1f31*/
+        #5d0e54f8;
     color: white;
     padding: 3px 8px;
     border-radius: 5px;
     font-size: 0.75em;
-    
+
     margin-top: 5px;
 }
 
@@ -225,10 +361,12 @@ button {
     background: none;
     border: none;
     padding: 0;
-    cursor: pointer; /* Indica que es un elemento cliqueable */
+    cursor: pointer;
+    /* Indica que es un elemento cliqueable */
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra la imagen horizontalmente */
+    justify-content: center;
+    /* Centra la imagen horizontalmente */
     /* Añade un margen si necesitas espacio entre los botones */
     margin: 0 5px;
 }
@@ -237,19 +375,22 @@ button {
     background: none;
     border: none;
     padding: 0;
-    cursor: pointer; /* Indica que es un elemento cliqueable */
+    cursor: pointer;
+    /* Indica que es un elemento cliqueable */
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra la imagen horizontalmente */
+    justify-content: center;
+    /* Centra la imagen horizontalmente */
     /* Añade un margen si necesitas espacio entre los botones */
     margin: 0 5px;
 }
 
 .controles_img {
     width: 30px;
-  height: auto; /* Mantiene la relación de aspecto */
-  background-color: transparent;
-  margin-top: 50px;
+    height: auto;
+    /* Mantiene la relación de aspecto */
+    background-color: transparent;
+    margin-top: 50px;
 }
 
 .controles_imgalt {
@@ -297,145 +438,173 @@ button {
 *******************************************************/
 .Contain_Imagen_Portada1 {
     margin-right: -15px;
-    animation: fadeIn 1s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 1s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada2 {
     margin-top: 13px;
     margin-right: -13px;
-    animation: fadeIn 1.3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 1.3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 1.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada3 {
     margin-right: -15px;
-    animation: fadeIn 1.6s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 1.6s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada4 {
     margin-top: 10px;
-    animation: fadeIn 2s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 2s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada5 {
     margin-right: -15px;
-    animation: fadeIn 2.3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 2.3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 2.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada6 {
     margin-right: -15px;
     margin-top: -5px;
-    animation: fadeIn 2.6s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 2.6s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 2.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada7 {
     margin-right: -15px;
-    animation: fadeIn 3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada8 {
     margin-right: -15px;
-    animation: fadeIn 3.3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 3.3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 3.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada9 {
     margin-right: -15px;
-    animation: fadeIn 3.6s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 3.6s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 3.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada10 {
     margin-right: -15px;
-    animation: fadeIn 4s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 4s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada11 {
     margin-right: -15px;
-    animation: fadeIn 4.3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 4.3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 4.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada12 {
     margin-right: -15px;
-    animation: fadeIn 4.6s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 4.6s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 4.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada13 {
     margin-right: -15px;
-    animation: fadeIn 5s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 5s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada14 {
     margin-right: -15px;
     margin-top: 12px;
-    animation: fadeIn 5.3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 5.3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 5.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada15 {
     margin-right: -15px;
-    animation: fadeIn 6s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 6s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 .Contain_Imagen_Portada16 {
     margin-top: 12px;
     margin-right: -1px;
-    animation: fadeIn 6.3s ease-in-out  forwards;
-    transform: translateY(-200px) scale(0.5); /* Empieza más arriba y más pequeña */
+    animation: fadeIn 6.3s ease-in-out forwards;
+    transform: translateY(-200px) scale(0.5);
+    /* Empieza más arriba y más pequeña */
     animation: caidaConEfecto 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
 }
 
 /*************************************************
     Aparición de poco a poco de cada pieza
 **************************************************/
-@keyframes fadeIn{
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Definición de la animación de caída con rebote y cambio de escala */
 @keyframes caidaConEfecto {
-  0% {
-    transform: translateY(-200px) scale(0.5); /* Posición inicial: arriba y pequeña */
-    opacity: 0;
-  }
-  30% {
-    opacity: 1; /* Se hace visible mientras cae */
-  }
-  80% {
-    transform: translateY(10px) scale(1.15); /* Pasa un poco de su posición final y se agranda ligeramente */
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0) scale(1); /* Posición final: en su lugar y tamaño normal */
-    opacity: 1;
-  }
+    0% {
+        transform: translateY(-200px) scale(0.5);
+        /* Posición inicial: arriba y pequeña */
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+        /* Se hace visible mientras cae */
+    }
+
+    80% {
+        transform: translateY(10px) scale(1.15);
+        /* Pasa un poco de su posición final y se agranda ligeramente */
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        /* Posición final: en su lugar y tamaño normal */
+        opacity: 1;
+    }
 }
 
 /*****************************
@@ -446,24 +615,27 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-margin-top: 70px;
 }
 
 .Mujer_Hombre {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
 }
 
 .Mujer {
     display: flex;
-    flex-direction: column; /* ¡Clave! Apila los ítems verticalmente */
+    flex-direction: column;
+    /* ¡Clave! Apila los ítems verticalmente */
     align-items: center;
 }
 
 .Hombre {
     display: flex;
-    flex-direction: column; /* ¡Clave! Apila los ítems verticalmente */
+    flex-direction: column;
+    /* ¡Clave! Apila los ítems verticalmente */
     align-items: center;
 }
 
@@ -476,25 +648,39 @@ button {
 }
 
 .divisorVerticalVestido {
-    width: 7px;         /* Ancho del cuadrado */
-    height: 450px;        /* Alto del cuadrado*/
-    background-color: #4c1c3d; /* Un color de fondo para que sea visible */
-    border: 2px solid #401833; /* Borde para resaltarlo */
+    width: 7px;
+    /* Ancho del cuadrado */
+    height: 450px;
+    /* Alto del cuadrado*/
+    background-color:
+        /*#4c1c3d*/
+        #5d0e54f8;
+    /* Un color de fondo para que sea visible */
+    border: 2px solid #4e0b46f8;
+    /* Borde para resaltarlo */
     border-radius: 5px;
-   margin: 5px;
-   display: flex;
-    flex-direction: column; /* ¡Clave! Apila los ítems verticalmente */
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    /* ¡Clave! Apila los ítems verticalmente */
     align-items: center;
 }
 
 .divisorHorizontalVestido {
-    width: 650px;         /* Ancho del cuadrado */
-    height: 7px;        /* Alto del cuadrado*/
-    background-color: #4c1c3d; /* Un color de fondo para que sea visible */
-    border: 2px solid #401833; /* Borde para resaltarlo */
+    width: 650px;
+    /* Ancho del cuadrado */
+    height: 7px;
+    /* Alto del cuadrado*/
+    background-color:
+        /*#4c1c3d*/
+        #5d0e54f8;
+    /* Un color de fondo para que sea visible */
+    border: 2px solid #520d4af8;
+    /* Borde para resaltarlo */
     border-radius: 5px;
-   margin: 5px;
-   margin-top: 360px;
+    margin: 5px;
+    margin-top: 360px;
+    margin-left: 50px;
 }
 
 .divisorHorizontalVestido2 {
@@ -504,6 +690,13 @@ button {
 
 .divisorHorizontalVestido3 {
     display: none;
+}
+
+.divisorHorizontalsection {
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+
 }
 
 .descriptionVestimenta {
@@ -516,19 +709,405 @@ button {
 }
 
 .Vestimenta_Text {
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     font-size: 50px;
 }
 
 #ubicacion {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    scroll-margin-top: 70px;
+    margin-top: -50px;
 }
 
+/*
 .Mapa {
     margin-top: 30px;
+}*/
+
+.Mensaje_Nombre_Salon {
+    font-family: "Playfair Display", serif;
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+.Mensaje_Nombre_Salon_TextNormal {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.Misa {
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.Mensaje_Extra {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.conteneddor_tarjeta {
+    width: 30%;
+    min-width: 500px;
+    height: 350px;
+    perspective: 1000px;
+    /* Necesario para la animación 3D */
+    margin: 20px;
+    /* Sombras y transiciones básicas para el contenedor si lo deseas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    /* Para que la sombra tenga esquinas redondeadas */
+    overflow: hidden;
+    /* Importante para que el contenido no se desborde al girar */
+}
+
+.tarjeta_frente_atras {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s ease;
+    /* Duración de la animación de giro */
+    transform-style: preserve-3d;
+    /* Permite que los hijos se posicionen en 3D */
+}
+
+/* Cuando el contenedor principal tiene :hover, el interior gira */
+.conteneddor_tarjeta:hover .tarjeta_frente_atras {
+    transform: rotateY(180deg);
+}
+
+.tarjeta_frente,
+.tarjeta_atras {
+    position: absolute;
+    width: 100%;
+    /* Agrega width y height para que las caras ocupen todo el contenedor */
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Oculta la parte trasera de un elemento al rotarlo */
+    backface-visibility: hidden;
+    /* Propiedad estándar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.tarjeta_frente {
+    background-color: #ffcff9f8;
+    border: 1px solid #7b136ff8;
+    padding: 1.5rem;
+    color: #8d3d83f8;
+    /* Color general del texto */
+    z-index: 2;
+    /* Asegura que la cara frontal esté por encima inicialmente */
+}
+
+.conteneddor_tarjeta:hover .tarjeta_frente {
+    opacity: 0;
+    /* Se vuelve transparente */
+    pointer-events: none;
+    /* Deshabilita clics en el frente transparente */
+}
+
+.tarjeta_atras {
+    background-color: #ffc2f8f8;
+    transform: rotateY(180deg);
+    /* La parte trasera está volteada inicialmente */
+    padding: 0;
+    /* Eliminar padding para que el mapa ocupe todo el espacio */
+    z-index: 1;
+    /* El mapa está detrás inicialmente */
+}
+
+
+
+.title_tarjeta {
+    color: #841477f8;
+}
+
+.text_tarjeta {
+    color: #8d3d83f8;
+}
+
+
+/**********************
+    Conteo regresivo
+************************/
+
+#reloj {
+    margin-top: 0px;
+    font-family: 'Dancing Script', cursive;
+    scroll-margin-top: 70px;
+}
+
+#conteo {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.style_conteo_items {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    background-color: #e9d3fc;
+    color: #7a5c6f;
+    margin: 5px;
+    border-radius: 10%;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    font-size: 70px;
+    transform: scale(.55);
+    margin-right: -70px;
+}
+
+.texto_conteo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7a5c6f;
+    font-size: 40px;
+}
+
+.ajuste_conteo_minutos {
+    margin-left: -10px;
+}
+
+.ajuste_conteo_segundos {
+    margin-left: -27px;
+}
+
+#padrinos {
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 70px;
+}
+
+.padrinos {
+    display: flex;
+    /*flex-wrap: wrap; Permite que las imágenes se envuelvan a la siguiente línea */
+    gap: 10px;
+    /* Espacio entre las imágenes */
+    justify-content: center;
+    /* Centra las imágenes horizontalmente */
+    align-items: flex-start;
+    /* Alinea las imágenes al inicio verticalmente */
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    /* Centra el collage en la página */
+}
+
+
+.ancho {
+    /*width: 70%;*/
+    width: 300px;
+    height: auto;
+    border: 15px solid #fff;
+    border-bottom: 25px solid #fff;
+    object-fit: cover;
+    /* Para "recortar" la imagen y llenar el espacio */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.madrina {
+    /*margin-top: 50px;*/
+    margin-top: 20px;
+    transform: rotate(-5deg);
+    z-index: 3;
+    animation: ladeoImagenDerechaIzquierda 2s ease-in-out infinite;
+}
+
+.padrino {
+    margin-top: 20px;
+    transform: rotate(5deg);
+    z-index: 4;
+    animation: ladeoImagenDerechaIzquierda 2s ease-in-out infinite;
+}
+
+@keyframes ladeoImagenDerechaIzquierda {
+    0% {
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.contenedor_imagen_frente_atras {
+    position: relative;
+}
+
+.imagen_frente {
+    position: absolute;
+    z-index: 2;
+}
+
+.clip_emoji {
+    margin-left: 130px;
+    margin-top: -10px;
+}
+
+.clip_emoji_padrino {
+    margin-left: 130px;
+    margin-top: -10px;
+}
+
+.imagen_atras {
+    position: absolute;
+    z-index: 1;
+}
+
+#regalos {
+    scroll-margin-top: 70px;
+}
+
+.Mensaje_Nombre_Regalos {
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    font-family: 'Dancing Script', 'Dancing Script', cursive;
+}
+
+.sobre_regalos {
+    max-width: 200px;
+    margin: 40px;
+    margin-top: 60px;
+    animation-name: balanceo_acelerado;
+    /* Nombre de la animación a usar */
+    animation-duration: 2s;
+    /* Duración de una iteración completa (2 segundos) */
+    animation-iteration-count: infinite;
+    /* Número de veces que se repite (infinito) */
+    animation-timing-function: ease-in-out;
+    /* Velocidad de la animación (empieza lento, acelera, termina lento) */
+}
+
+@keyframes balanceo_acelerado {
+    0% {
+        transform: rotate(-15deg)
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+
+
+#asistencia {
+    scroll-margin-top: 70px;
+}
+
+.whatsapp_button_asistencia {
+    background-color: transparent;
+    color: white;
+    border: 3px solid #841477f8;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+    animation: saltarinMenor 2s ease-in-out infinite;
+}
+
+@keyframes saltarinMenor {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.whatsapp_button_asistencia:hover {
+    transform: scale(1.1);
+    background-color: #841477f8;
+}
+
+.agradecer_asistencia {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.form {
+    min-width: 300px;
+    width: 30%;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    background-color: inherit;
+    border: 5px solid #841477f8;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form__group {
+    width: 90%;
+    text-align: left;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #841477f8;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form__textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button_aument,
+.button_dismin {
+    animation: none;
+}
+
+.cantidad_invitados {
+    max-width: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
 }
 
 /***********************
@@ -537,23 +1116,35 @@ button {
 ////////////////////////
 ************************/
 @media (min-width: 319px) and (max-width: 767px) {
+
+    /*
+.fondo_primario {
+    margin-top: -65px;
+}
+
+.flores_adorno {
+    margin-top: -65px;
+    display: block;
+}
+*/
+
     /***************************************************
     Acomodo por las 4 filas del rompecabezas
 ****************************************************/
 
-.Imagen_Portada2 {
-    margin-left: -25px;
-}
+    .Imagen_Portada2 {
+        margin-left: -25px;
+    }
 
-.Imagen_Portada3 {
-    margin-left: 2px;
-}
+    .Imagen_Portada3 {
+        margin-left: 2px;
+    }
 
-.Imagen_Portada4 {
-    margin-left: -25px;
-}
+    .Imagen_Portada4 {
+        margin-left: -25px;
+    }
 
-/***********************
+    /***********************
     Menú hamburguesa
 ************************/
 
@@ -581,17 +1172,21 @@ button {
         right: 0;
         height: 100%;
         width: 70%;
-        background-color: #4c1c3d;
+        background-color:
+            /*#4e2f4e*/
+            #841477f8;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-30px);
+        transform: translateY(100%);
         transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        display: none;
     }
 
     .nav__menu--open {
         opacity: 1;
         visibility: visible;
-        transform: translateY(0);
+        transform: translateX(0);
+        display: flex;
     }
 
     .nav__list {
@@ -608,69 +1203,221 @@ button {
         font-weight: bold;
     }
 
-#inicio {
-    scroll-margin-top: 70px;
-}
+    #inicio {
+        scroll-margin-top: 70px;
+    }
 
-/***************************
+    /***************************
     Código de Vestimenta
 ****************************/
-#vestimenta {
-    transform: scale(.85);
-    margin-top: -100px;
-    scroll-margin-top: 70px;
+    #vestimenta {
+        transform: scale(.85);
+        margin-top: 0px;
+        scroll-margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .Mujer_Hombre {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Hombre_Img {
+        width: 255px;
+    }
+
+    .Mujer_Img {
+        width: 255px;
+    }
+
+    .divisorVerticalVestido,
+    divisorHorizontalVestido {
+        display: none;
+    }
+
+    .divisorHorizontalVestido2 {
+        margin: 20px;
+        width: 380px;
+        margin-left: 5px;
+    }
+
+    .divisorHorizontalVestido3 {
+        margin: 20px;
+        width: 380px;
+        margin-left: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #ubicacion {
+        margin-bottom: 0px;
+        scroll-margin-top: 70px;
+    }
+
+    .Mapa {
+        transform: scale(.75);
+        margin: -20px;
+    }
+
+    .conteneddor_tarjeta {
+        min-width: 300px;
+    }
+
+    .Contain_Imagen_Portada1,
+    .Contain_Imagen_Portada4,
+    .Contain_Imagen_Portada5,
+    .Contain_Imagen_Portada8,
+    .Contain_Imagen_Portada9,
+    .Contain_Imagen_Portada12,
+    .Contain_Imagen_Portada13,
+    .Contain_Imagen_Portada16 {
+        display: none;
+    }
+
+    #reloj {
+        scroll-margin-top: 70px;
+    }
+
+    .style_conteo_items {
+        margin-right: 0;
+        transform: scale(.75);
+        font-size: 50px;
+    }
+
+    .ajuste_conteo_minutos,
+    .ajuste_conteo_segundos {
+        margin: 0;
+    }
+
+    #padrinos {
+        scroll-margin-top: 70px;
+    }
+
+    .padrinos {
+        flex-wrap: wrap;
+    }
+
+    .ancho {
+        width: 70%;
+    }
+
+    .madrina {
+        margin-top: 50px;
+    }
+
+    .clip_emoji {
+        margin-left: 130px;
+        margin-top: 20px;
+    }
+
+    .form {
+        width: 100%;
+    }
 }
 
-.Mujer_Hombre {
-    align-items: center;
-    flex-direction: column;
+@media (min-width: 100px) and (max-width: 345px) {
+    #inicio {
+        transform: scale(.9);
+    }
+
+    #ubicacion {
+        margin-top: -100px;
+        transform: scale(.9);
+    }
+
+    #vestimenta {
+        transform: scale(.7);
+        margin-top: -100px;
+    }
+
+    #reloj {
+        transform: scale(.9);
+        margin-top: -100px;
+    }
+
+    #padrinos {
+        transform: scale(.9);
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+
+    #regalos {
+        transform: scale(.9);
+        margin-top: -20px;
+    }
+
+    .sobre_regalos {
+        margin-left: 20px;
+    }
+
+    .div_regalos {
+        display: none;
+    }
+
+    #asistencia {
+        transform: scale(.9);
+        margin-top: -20px;
+    }
+
+    .form {
+        margin-left: -30px;
+    }
+
+    .divisorHorizontalsection {
+        margin-left: -100px;
+    }
+
+    .divisorHorizontalVestido {
+        margin-left: 100px;
+        display: none;
+    }
+
+    .footer_section {
+        transform: scale(.9);
+    }
+
+    .clip_emoji {
+        margin-left: 130px;
+        margin-top: 20px;
+    }
 }
 
-.Hombre_Img {
-    width: 255px;
+@media (max-width: 369px) {
+    .divisorHorizontalVestido2 {
+        margin: 20px;
+        width: 360px;
+        margin-left: 10px;
+    }
+
+    .divisorHorizontalVestido3 {
+        margin: 20px;
+        width: 360px;
+        margin-left: 5px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .divisorHorizontalsection {
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-left: -10px;
+    }
+
+    #padrinos {
+        margin-left: -5px;
+    }
+
 }
 
-.Mujer_Img {
-    width: 255px;
-}
+@media (min-width: 768px) and (max-width: 999px) {
+    .divisorHorizontalVestido {
+        margin-left: 0px;
+    }
 
-.divisorVerticalVestido,
-divisorHorizontalVestido{
-    display: none;
-}
-
-.divisorHorizontalVestido2 {
-    margin: 20px;
-    width: 380px;
-    margin-left: 5px;
-}
-
-.divisorHorizontalVestido3 {
-    margin: 20px;
-    width: 380px;
-    margin-left: 5px;
-    display: block;
-}
-
-#ubicacion {
-    margin-bottom: 0px;
-    scroll-margin-top: 70px;
-}
-
-.Mapa {
-    transform: scale(.9);
-    margin: 50px;
-}
-
-.Contain_Imagen_Portada1,
-.Contain_Imagen_Portada4,
-.Contain_Imagen_Portada5,
-.Contain_Imagen_Portada8,
-.Contain_Imagen_Portada9,
-.Contain_Imagen_Portada12,
-.Contain_Imagen_Portada13,
-.Contain_Imagen_Portada16 {
-    display: none;
-}
-
+    .divisorHorizontalsection {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
